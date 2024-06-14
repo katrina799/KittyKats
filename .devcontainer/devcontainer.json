@@ -4,12 +4,20 @@
 
 	"customizations": {
 		"vscode": {
-			"settings": {},
+			"settings": {
+				"editor.formatOnSave": true,
+				"python.formatting.provider": "black",
+				"[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true
+                }
+			},
 			"extensions": [
-				"ms-python.flake8"
+				"ms-python.flake8",
+				"ms-python.black-formatter"
 			]
 		}
 	},
 	
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y make texlive-xetex && pip3 install -r src/requirements.txt"
+	"postCreateCommand": "sudo apt-get update && pip3 install -r src/requirements.txt"
 }
