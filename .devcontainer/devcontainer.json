@@ -4,9 +4,13 @@
 
 	"customizations": {
 		"vscode": {
-			"settings": {},
+			"settings": {
+				"editor.formatOnSave": true,
+				"python.formatting.provider": "black"
+			},
 			"extensions": [
-				"ms-python.flake8"
+				"ms-python.flake8",
+				"ms-python.black-formatter"
 			]
 		}
 	},
