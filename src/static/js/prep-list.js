@@ -27,5 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    document.getElementById('downloadPrepList').addEventListener('click', downloadPrepList);
+
+    function downloadPrepList() {
+      const link = document.createElement('a');
+      link.href = '../static/files/Kitten Prep List.pdf'; // Path to your PDF file
+      link.download = '../static/files/Kitten Prep List.pdf'; // Name of the file to be downloaded
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
     window.addEventListener('resize', updateSection);
 });

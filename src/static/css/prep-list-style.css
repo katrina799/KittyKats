@@ -21,6 +21,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #2c2c2c;
+    /*background: cornflowerblue;*/
     margin: 0;
     padding: 0;
     text-align: center;
@@ -54,7 +55,7 @@ h2 {
 
 .section h3 {
     background-color: #FFBDF2;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     margin: 0;
     color: #000;
     height: 8%;
@@ -89,6 +90,9 @@ h2 {
     align-content: center;
     justify-content: center;
     justify-items: center;
+    background: lightskyblue;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .item span {
@@ -148,4 +152,16 @@ h2 {
     width: 50%;
     height: 100%;
     background-size: contain !important;
+}
+
+#downloadPrepList {
+    margin-left: 1vw;
+    height: 25%;
+    background: #FFBDF2;
+    border-radius: 5px;
+}
+
+#downloadPrepList:hover {
+    background: #FF99E6;
+    cursor: pointer;
 }
