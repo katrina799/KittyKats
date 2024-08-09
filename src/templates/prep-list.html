@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Qianni Wang" />
     <meta name="description" content="A web to show Katrina's cute cats" />
     <title>Kat's Cats</title>
@@ -10,36 +10,212 @@
     <link rel="stylesheet" href="../static/css/prep-list-style.css" />
 </head>
 <body>
-    <h2>Here is all you need to prepare for keeping a cat</h2>
+    <h2 id="topLine">Here is all you need to prepare for keeping a cat:</h2>
     <div class="container">
-        <div class="section">
-            <h3>TO BE DONE</h3>
-            <div class="item"><img src="images/sanitation.png" alt="Sanitation"><span>Sanitation</span></div>
-            <div class="item"><img src="images/disinfection.png" alt="Disinfection"><span>Disinfection</span></div>
-            <div class="item"><img src="images/sealing.png" alt="Sealing"><span>Sealing</span></div>
-            <div class="item"><img src="images/carrier.png" alt="Carrier"><span>Carrier</span></div>
-        </div>
-        <div class="section">
-            <h3>Food</h3>
-            <div class="item"><img src="images/cat-food.png" alt="Cat Food"><span>Dry Food</span></div>
-            <div class="item"><img src="images/canned-food.png" alt="Canned Food"><span>Wet Food</span></div>
-            <div class="item"><img src="images/cat-snacks.png" alt="Cat Snacks"><span>Treats</span></div>
-            <div class="item"><img src="images/probiotics.png" alt="Probiotics"><span>Supplements</span></div>
-        </div>
-        <div class="section">
-            <h3>TO BE DONE</h3>
-            <div class="item"><img src="images/cat-bowl.png" alt="Cat Bowl"><span>Bowls</span></div>
-            <div class="item"><img src="images/cat-litter.png" alt="Cat Litter"><span>Litter</span></div>
-            <div class="item"><img src="images/litter-box.png" alt="Litter Box"><span>Litter Box</span></div>
-            <div class="item"><img src="images/scratch-pad.png" alt="Scratch Pad"><span>Scratch Pad</span></div>
-        </div>
-        <div class="section">
-            <h3>TO BE DONE</h3>
-            <div class="item"><img src="images/ear-cleaner.png" alt="Ear Cleaner"><span>Ear Cleaner</span></div>
-            <div class="item"><img src="images/deworming.png" alt="Deworming"><span>Deworming</span></div>
-            <div class="item"><img src="images/brush.png" alt="Brush"><span>Brush</span></div>
-            <div class="item"><img src="images/nail-clippers.png" alt="Nail Clippers"><span>Nail Clippers</span></div>
+        <div class="sections-wrapper">
+            <div class="section">
+                <h3>Area Preparation (1/4)</h3>
+                <div class="items-grid">
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Sanitation" style="background: url('../static/images/prep-list/cleaning.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Sanitation</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Regularly clean the cat's living area to maintain hygiene.<br>
+                            • Ensure litter boxes are cleaned daily.<br>
+                            • Vacuum and dust to reduce allergens and fur.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Disinfection" style="background: url('../static/images/prep-list/pet-wipes.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Disinfection</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Use pet-safe disinfectants for cleaning surfaces.<br>
+                            • Regularly disinfect food and water bowls.<br>
+                            • Clean and disinfect toys and bedding.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Sealing" style="background: url('../static/images/prep-list/fly-screen.png') no-repeat center center; background-size: cover;"></div>
+                            <span>Sealing</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Secure windows and balconies to prevent escapes.<br>
+                            • Seal any small openings where the cat might hide.<br>
+                            • Ensure screens are in place to keep insects out.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Carrier" style="background: url('../static/images/prep-list/carrier.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Carrier</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Have a sturdy carrier for vet visits and travel.<br>
+                            • Make the carrier comfortable with a soft blanket.<br>
+                            • Acclimate your cat to the carrier well in advance.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Food (2/4)</h3>
+                <div class="items-grid">
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Cat Food" style="background: url('../static/images/prep-list/dry-food.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Dry Food</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Provide high-quality dry food for daily nutrition.<br>
+                            • Ensure fresh dry food is available at all times.<br>
+                            • Monitor portion sizes to avoid overfeeding.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Canned Food" style="background: url('../static/images/prep-list/canned-food.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Wet Food</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Include wet food for variety and hydration.<br>
+                            • Serve wet food in clean bowls, and refrigerate leftovers.<br>
+                            • Gradually introduce new wet food to avoid digestive issues.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Cat Snacks" style="background: url('../static/images/prep-list/treats.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Treats</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Use treats for training and positive reinforcement.<br>
+                            • Choose healthy treats without too many additives.<br>
+                            • Limit treats to avoid excessive calorie intake.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Probiotics" style="background: url('../static/images/prep-list/supplements.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Supplements</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Provide supplements as needed for health conditions.<br>
+                            • Consult with your vet before giving new supplements.<br>
+                            • Use supplements to support coat, digestion, and joint health.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Environment (3/4)</h3>
+                <div class="items-grid">
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Cat Bowl" style="background: url('../static/images/prep-list/pet-fountain.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Bowls</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Provide clean, fresh water daily using bowls or a fountain.<br>
+                            • Use separate bowls for food and water.<br>
+                            • Choose stainless steel or ceramic bowls for hygiene.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Cat Litter" style="background: url('../static/images/prep-list/cat-litter.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Litter</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Use clumping or non-clumping litter based on preference.<br>
+                            • Maintain multiple litter boxes in multi-cat households.<br>
+                            • Keep litter boxes in quiet, accessible locations.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Litter Box" style="background: url('../static/images/prep-list/litter-box.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Litter Box</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Clean litter boxes daily to reduce odors.<br>
+                            • Provide one litter box per cat, plus one extra.<br>
+                            • Use unscented litter to avoid deterring the cat.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Scratch Pad" style="background: url('../static/images/prep-list/cat-tree.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Scratch Pad</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Provide scratching posts to protect furniture.<br>
+                            • Choose sturdy, tall posts for full-body stretching.<br>
+                            • Use catnip or toys to encourage scratching on posts.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h3>Health (4/4)</h3>
+                <div class="items-grid">
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Ear Cleaner" style="background: url('../static/images/prep-list/ear-cleaner.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Ear Cleaner</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Regularly clean your cat’s ears to prevent infections.<br>
+                            • Use vet-recommended ear cleaners.<br>
+                            • Be gentle and avoid inserting anything into the ear canal.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Deworming" style="background: url('../static/images/prep-list/dewormer.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Deworming</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Deworm your cat regularly as per vet’s advice.<br>
+                            • Use prescription dewormers for effectiveness.<br>
+                            • Monitor for signs of parasites and consult your vet.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Brush" style="background: url('../static/images/prep-list/brush.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Brush</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Brush your cat regularly to prevent matting and reduce shedding.<br>
+                            • Use brushes suitable for your cat’s fur type.<br>
+                            • Be gentle to avoid irritating your cat’s skin.
+                        </span>
+                    </div>
+                    <div class="item">
+                        <div class="item-top">
+                            <div class="itemImage" alt="Nail Clippers" style="background: url('../static/images/prep-list/nail-clippers.jpg') no-repeat center center; background-size: cover;"></div>
+                            <span>Nail Clippers</span>
+                        </div>
+                        <span class="item-bottom">
+                            • Trim your cat’s nails regularly to prevent overgrowth.<br>
+                            • Use cat-specific nail clippers for safety.<br>
+                            • Be cautious to avoid cutting the quick, which can cause pain.
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="navigation">
+        <button id="prev">&larr; Previous</button>
+        <button id="next">Next &rarr;</button>
+    </div>
+
+    <script src="../static/js/prep-list.js"></script>
 </body>
 </html>
